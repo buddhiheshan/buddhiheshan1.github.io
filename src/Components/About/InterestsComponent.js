@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row} from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Interests = ({ interests, description }) => {
   const interests_list = interests.map((interest, i) => (
@@ -9,10 +9,10 @@ const Interests = ({ interests, description }) => {
   return (
     <Container>
       <Row className="interests-row">
-        <Col>
-        <p>{description}</p>
+        <Col md={6}>
+          <p>{description}</p>
         </Col>
-        <Col >
+        <Col md={6}>
           <h2>My Interests</h2>
           <ul variant="flush">{interests_list}</ul>
         </Col>
