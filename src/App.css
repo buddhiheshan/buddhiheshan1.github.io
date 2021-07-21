@@ -1,0 +1,29 @@
+body {
+    color: aliceblue;
+    background-color: black;
+}
+
+h2{
+    text-align: center;
+}
+
+.row {
+    align-items: center;
+}
+
+/*  */
+.main-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.intro-row{
+  height: 50vh;
+  text-align: center;
+}
+
+.interests-row{
+    height: 50vh;
+    align-items: center;
+}
+

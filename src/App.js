@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import './App.css';
 
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -8,6 +9,7 @@ import Projects from "./Pages/Projects";
 import Resume from "./Pages/Resume";
 
 import NavBar from "./Components/NavbarComponent";
+import Footer from './Components/FooterComponent.js';
 
 const App = () => {
   return (
@@ -23,8 +25,7 @@ const App = () => {
         <Route path="/resume" component={Resume} />
       </Switch>
       <Redirect to="/" />
-
-      {/* <Footer /> */}
+      <Footer />
       {/* </div> */}
     </BrowserRouter>
   );

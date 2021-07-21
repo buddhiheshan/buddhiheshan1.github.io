@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState } from "react";
+
+import { PROJECTS } from "../Data/projects";
+import { MINI_PROJECTS } from "../Data/miniProjects";
+
+import { Container } from "react-bootstrap";
+
+import Project from "../Components/Projects/ProjectComponent";
+import MiniProject from "../Components/Projects/MiniProjectComponent";
 
 const Projects = () => {
-    return (
-        <div>
-            This is Projects
-        </div>
-    )
-}
+  const [projects] = useState(PROJECTS);
+  const [mini_projects] = useState(MINI_PROJECTS);
 
-export default Projects
+  return (
+    <Container className="main-container">
+      <Project projects={projects} />
+      <MiniProject mini_projects={mini_projects} />
+    </Container>
+  );
+};
+
+export default Projects;

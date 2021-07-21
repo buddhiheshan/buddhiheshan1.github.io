@@ -1,32 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { AiOutlineFundProjectionScreen, AiOutlineHome,AiOutlineUser, AiOutlineFileText } from "react-icons/ai";
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark" >
+    <Navbar bg="dark" expand="lg" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand as={Link} to="/">
           Buddhi Perera
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="justify-content-end">
-            <Nav.Link as={Link} to="/">
-              Home
-            </Nav.Link>
-            <Nav.Link as={Link} to="/about">
-              About
-            </Nav.Link>
-            <Nav.Link as={Link} to="/projects">
-              Projects
-            </Nav.Link>
-            <Nav.Link as={Link} to="/resume">
-              Resume
-            </Nav.Link>
-            <Button href="https://github.com/buddhiheshan" target="_blank">
-              Github
-            </Button>
+          <Nav className="m-auto">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/">
+                <AiOutlineHome size="1.2em" /> Home
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/about">
+                <AiOutlineUser size="1.2em" /> About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/projects">
+                <AiOutlineFundProjectionScreen size="1.2em" /> Projects
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/resume">
+                <AiOutlineFileText size="1.2em" /> Resume
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
