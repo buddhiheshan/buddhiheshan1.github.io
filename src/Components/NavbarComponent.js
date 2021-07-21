@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { AiOutlineFundProjectionScreen, AiOutlineHome,AiOutlineUser, AiOutlineFileText } from "react-icons/ai";
+import { AiOutlineFundProjectionScreen ,AiOutlineUser, AiOutlineFileText } from "react-icons/ai";
 
 const NavBar = () => {
   return (
@@ -16,11 +16,6 @@ const NavBar = () => {
           <Nav className="m-auto">
             <Nav.Item>
               <Nav.Link as={Link} to="/">
-                <AiOutlineHome size="1.2em" /> Home
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link as={Link} to="/about">
                 <AiOutlineUser size="1.2em" /> About
               </Nav.Link>
             </Nav.Item>

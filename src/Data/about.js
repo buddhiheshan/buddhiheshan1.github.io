@@ -1,4 +1,4 @@
-export const HOME = {
+export const ABOUT = {
   name: "Buddhi Perera",
   description:"THis is a description about me.",
   interests: [
