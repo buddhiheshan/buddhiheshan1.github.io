@@ -29,7 +29,19 @@ h2 {
   border-bottom: 3px solid white;
 }
 
-.skill{
-    padding: 10px;
-    text-align: center;
+.skill {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Projects Page */
+.project-card {
+  padding: 20px;
+}
+
+.project-card-view {
+  background: unset;
+  border: 2px solid white;
+  padding: 20px;
+  text-align: center;
 }
