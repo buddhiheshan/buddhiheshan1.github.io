@@ -1,11 +1,21 @@
 import React from "react";
 import { Col, Row, Card, Button, ButtonGroup } from "react-bootstrap";
 
+import julia from "../../Assets/MiniProjects/fractals/julia.png";
+import mandelbrot from "../../Assets/MiniProjects/fractals/mandelbrot.png";
+import auction from "../../Assets/MiniProjects/auction.png";
+import alu from "../../Assets/MiniProjects/alu.png";
+import pathfinder from "../../Assets/MiniProjects/pathfinder.png";
+import memory from "../../Assets/MiniProjects/memory.png";
+import ProjectImage from "./ProjectImageComponent";
+
 const MiniProject = ({ mini_projects }) => {
+  const img_array = [[julia, mandelbrot], [auction], [alu], [pathfinder], [memory]];
+
   const MiniProjects = mini_projects.map((project, i) => (
-    <Col xs={12} md={4} key={i} className="p-0">
-      <Card className="project-card">
-        <Card.Img variant="top" src={project.image} />
+    <Col xs={12} md={4} key={i} className="project-card">
+      <Card className="project-card-view">
+        <ProjectImage images={img_array[i]} />
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
           <Card.Text>{project.description}</Card.Text>
