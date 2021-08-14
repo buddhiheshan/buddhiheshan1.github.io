@@ -1,11 +1,24 @@
 import React from "react";
 import { Col, Row, Card, Button, ButtonGroup } from "react-bootstrap";
 
+import ProjectImage from "./ProjectImageComponent";
+
+import pipeline from "../../Assets/Projects/pipeline.png";
+import waiterbot1 from "../../Assets/Projects/waiterbot/overall.png";
+import waiterbot2 from "../../Assets/Projects/waiterbot/hardware.png";
+import waiterbot3 from "../../Assets/Projects/waiterbot/desktop.png";
+import waiterbot4 from "../../Assets/Projects/waiterbot/mobile.png";
+import single from "../../Assets/Projects/single_cycle.png";
+import key from "../../Assets/Projects/key_management.png";
+import compost from "../../Assets/Projects/compost.png";
+
 const Project = ({ projects }) => {
+  const img_array = [[pipeline], [waiterbot1, waiterbot2, waiterbot3, waiterbot4], [single], [key], [compost]];
+
   const Projects = projects.map((project, i) => (
     <Col xs={12} md={6} key={i} className="project-card">
       <Card className="project-card-view">
-        <Card.Img variant="top" src={project.image} className="project-card-image" />
+        <ProjectImage images={img_array[i]} />
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
           <Card.Text>{project.description}</Card.Text>

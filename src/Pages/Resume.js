@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Container } from "react-bootstrap";
+import ResumeButtonComponent from "../Components/Resume/ResumeButtonComponent";
 
 const Resume = () => {
-    return (
-        <div>
-            this is resume
-        </div>
-    )
-}
+  return (
+    <Container className="main-container">
+      <ResumeButtonComponent />
+    </Container>
+  );
+};
 
-export default Resume
+export default Resume;
