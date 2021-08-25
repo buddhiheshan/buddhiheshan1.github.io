@@ -9,7 +9,11 @@ const ProjectImage = ({ images }) => {
       <Image src={image} fluid />
     </Carousel.Item>
   ));
-  return <Carousel fade>{Images}</Carousel>;
+  return (
+    <Carousel nextIcon="" nextLabel="" prevIcon="" prevLabel="" fade>
+      {Images}
+    </Carousel>
+  );
 };
 
 export default ProjectImage;

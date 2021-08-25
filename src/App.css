@@ -8,9 +8,18 @@ h2 {
   padding: 10px 0px;
 }
 
+h3 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
 .row {
   align-items: center;
   padding: 20px 0px;
+}
+
+ul.no-bullet {
+  list-style-type: none;
 }
 
 /*  */
@@ -44,4 +53,20 @@ h2 {
   border: 2px solid white;
   padding: 20px;
   text-align: center;
+}
+
+/* Resume */
+.resume-item {
+  border-left: 2px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.resume-item-title {
+  text-align: center;
+}
+
+.resume-item-year {
+  text-align: center;
+  margin: 0px;
 }
