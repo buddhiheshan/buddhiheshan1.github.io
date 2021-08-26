@@ -21,12 +21,12 @@ const MiniProject = ({ mini_projects }) => {
           <Card.Text>{project.description}</Card.Text>
           <ButtonGroup aria-label="Basic example">
             {project.github ? (
-              <Button variant="outline-primary" href={project.github} target="_blank">
+              <Button variant="outline-light" href={project.github} target="_blank">
                 Github
               </Button>
             ) : null}
             {project.webpage ? (
-              <Button variant="outline-primary" href={project.webpage} target="_blank">
+              <Button variant="outline-light" href={project.webpage} target="_blank">
                 Website
               </Button>
             ) : null}

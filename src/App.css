@@ -13,6 +13,11 @@ h3 {
   padding: 20px 0px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .row {
   align-items: center;
   padding: 20px 0px;
@@ -29,8 +34,8 @@ ul.no-bullet {
 }
 
 .intro-row {
-  height: 60vh;
   text-align: center;
+  padding: 30px;
   border-bottom: 3px solid white;
 }
 
@@ -56,6 +61,10 @@ ul.no-bullet {
 }
 
 /* Resume */
+.resume-button {
+  text-align: center;
+}
+
 .resume-item {
   border-left: 2px solid white;
   padding: 10px;
@@ -69,4 +78,9 @@ ul.no-bullet {
 .resume-item-year {
   text-align: center;
   margin: 0px;
+  font-style: italic;
+}
+
+.footer {
+  background-color: rgb(27, 27, 27);
 }

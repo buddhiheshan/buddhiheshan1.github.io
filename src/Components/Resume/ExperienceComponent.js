@@ -2,7 +2,6 @@ import React from "react";
 // import { Button, Row, Col, Container } from "react-bootstrap";
 
 const ExperienceComponent = ({ experience }) => {
-  console.log(experience);
   const Items = experience.map((item, i) => (
     <div className="resume-item" key={i}>
       <h5 className="resume-item-title">{item.title}</h5>

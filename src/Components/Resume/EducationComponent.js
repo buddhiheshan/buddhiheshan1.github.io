@@ -8,7 +8,11 @@ const EducationComponent = ({ education }) => {
       <p className="resume-item-year">{item.year}</p>
       <ul className="no-bullet">
         <li>{item.organization}</li>
-        {item.gpa ? <li>Current GPA: {item.gpa}</li> : null}
+        {item.gpa ? (
+          <li>
+            Current GPA: <strong>{item.gpa}</strong>
+          </li>
+        ) : null}
         {item.description ? <li>{item.description}</li> : null}
       </ul>
     </div>
