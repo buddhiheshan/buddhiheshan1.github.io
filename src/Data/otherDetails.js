@@ -37,7 +37,7 @@ export const DETAILS = {
   ],
   extra: [
     {
-      title: "Member Rotaract Club of Katugasthota Region",
+      title: "Member of the Rotaract Club of Katugasthota Region",
       line1: "Vice-President 2021 - Present",
       line2: "Treasurer 2020 - 2021",
     },
@@ -45,10 +45,10 @@ export const DETAILS = {
       title: "National School Games Colors for Athletics",
     },
     {
-      title: "Trinity College Colors for Athletics",
+      title: "School Officer at Trinity College Kandy - 2015/2016",
     },
     {
-      title: "School Officer at Trinity College Kandy - 2015/2016",
+      title: "Trinity College Colors for Athletics",
     },
   ],
 };

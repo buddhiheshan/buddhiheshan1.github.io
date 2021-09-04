@@ -17,18 +17,18 @@ const EducationAndExperience = () => {
   return (
     <Container className="main-container">
       <Row>
-        <Col>
+        <Col md={6}>
           <EducationComponent education={details.education} />
         </Col>
-        <Col>
+        <Col md={6}>
           <ExperienceComponent experience={details.experience} />
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col md={6}>
           <AchievementsComponent acheivements={details.acheivements} />
         </Col>
-        <Col>
+        <Col md={6}>
           <ExtrasComponent extra={details.extra} />
         </Col>
       </Row>

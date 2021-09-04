@@ -18,7 +18,10 @@ const MiniProject = ({ mini_projects }) => {
         <ProjectImage images={img_array[i]} />
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
-          <Card.Text>{project.description}</Card.Text>
+          <Card.Text>
+            <p className="project-item-year">{project.year}</p>
+            <p className="project-item-desc">{project.description}</p>
+          </Card.Text>
           <ButtonGroup aria-label="Basic example">
             {project.github ? (
               <Button variant="outline-light" href={project.github} target="_blank">

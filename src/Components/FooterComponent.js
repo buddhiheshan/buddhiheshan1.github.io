@@ -8,9 +8,8 @@ const Footer = () => {
   return (
     <Container fluid className="footer">
       <Row className="text-center">
-        <Col>Developed by Buddhi Perera</Col>
-        <Col>Copyright &copy; {year}</Col>
-        <Col>
+        <Col md={4}>Developed by Buddhi Perera</Col>
+        <Col md={4}>
           <a href="https://github.com/buddhiheshan" target="_blank" rel="noopener noreferrer">
             <AiOutlineGithub size="1.5em" />
           </a>
@@ -24,6 +23,7 @@ const Footer = () => {
             <AiFillInstagram size="1.5em" />
           </a>
         </Col>
+        <Col md={4}>Copyright &copy; {year}</Col>
       </Row>
     </Container>
   );

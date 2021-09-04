@@ -41,6 +41,7 @@ ul.no-bullet {
 
 .interests-row {
   border-bottom: 3px solid white;
+  text-align: justify;
 }
 
 .skill {
@@ -58,6 +59,16 @@ ul.no-bullet {
   border: 2px solid white;
   padding: 20px;
   text-align: center;
+}
+
+.project-item-year {
+  text-align: center;
+  margin: 0px;
+  font-style: italic;
+}
+
+.project-item-desc {
+  text-align: justify;
 }
 
 /* Resume */
