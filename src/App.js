@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
+import "./App.css";
 
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
-import Resume from "./Pages/Resume";
+import EducationAndExperience from "./Pages/EducationAndExperience";
 
 import NavBar from "./Components/NavbarComponent";
-import Footer from './Components/FooterComponent.js';
+import Footer from "./Components/FooterComponent.js";
 
 const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <BrowserRouter>
       {/* <Preloader load={load} /> */}
@@ -20,7 +24,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={About} />
         <Route path="/projects" component={Projects} />
-        <Route path="/resume" component={Resume} />
+        <Route path="/education_and_experience" component={EducationAndExperience} />
       </Switch>
       <Redirect to="/" />
       <Footer />

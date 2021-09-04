@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { PROJECTS } from "../Data/projects";
 import { MINI_PROJECTS } from "../Data/miniProjects";
@@ -11,6 +11,10 @@ import MiniProject from "../Components/Projects/MiniProjectComponent";
 const Projects = () => {
   const [projects] = useState(PROJECTS);
   const [mini_projects] = useState(MINI_PROJECTS);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Container className="main-container">
