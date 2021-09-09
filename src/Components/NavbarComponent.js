@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Navbar, Container, Nav, Button, ButtonGroup } from "react-bootstrap";
 import { AiOutlineFundProjectionScreen, AiOutlineUser, AiOutlineFileText, AiFillGithub } from "react-icons/ai";
 
-import PDF from "../Assets/BUDDHI_PERERA_Resume.pdf";
+import PDF from "../Assets/Buddhi_Perera_Resume.pdf";
 
 const NavBar = () => {
   return (

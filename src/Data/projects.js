@@ -5,7 +5,13 @@ export const PROJECTS = [
     description: "Design and implementation of a pipeline processor according to the RV32IM RISC–V ISA. This was implemented using behavioral modeling in VerilogHDL. This processor includes a forwarding unit for hazard detection and a memory hierarchy with a data cache, an instruction cache and a main memory",
     github: "https://github.com/cepdnaclk/e16-co502-RV32IM-pipeline-implementation-group1",
     webpage: "https://cepdnaclk.github.io/e16-co502-RV32IM-pipeline-implementation-group1",
-    image: "me",
+  },
+  {
+    title: "MyStore",
+    year: "2021 - Present",
+    description: "A platform for a small and medium scale business to manage their inventory and to sell their products online. MyStore includes a web application for the customers to purchase products and a desktop application for the shop owner to manage the inventory and to sell the products",
+    // github: "https://github.com/cepdnaclk/e16-co502-RV32IM-pipeline-implementation-group1",
+    // webpage: "https://cepdnaclk.github.io/e16-co502-RV32IM-pipeline-implementation-group1",
   },
   {
     title: "WaiterBot System",

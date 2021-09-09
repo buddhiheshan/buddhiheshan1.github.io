@@ -13,7 +13,7 @@ import key from "../../Assets/Projects/key_management.png";
 import compost from "../../Assets/Projects/compost.png";
 
 const Project = ({ projects }) => {
-  const img_array = [[pipeline], [waiterbot1, waiterbot2, waiterbot3, waiterbot4], [single], [key], [compost]];
+  const img_array = [[pipeline], [key], [waiterbot1, waiterbot2, waiterbot3, waiterbot4], [single], [key], [compost]];
 
   const Projects = projects.map((project, i) => (
     <Col xs={12} md={6} key={i} className="project-card">
