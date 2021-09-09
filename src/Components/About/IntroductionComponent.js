@@ -23,9 +23,9 @@ const Introduction = ({ name }) => {
             </a>
           </div>
           <div className="p-2">
-            <a href="mailto:gkbhperera.tck@gmail.com">
+            <a href="mailto:e16276@eng.pdn.ac.lk">
               <AiFillMail size="2em" />
-              <span> gkbhperera.tck@gmail.com</span>
+              <span> e16276@eng.pdn.ac.lk</span>
             </a>
           </div>
           <div className="p-2">
