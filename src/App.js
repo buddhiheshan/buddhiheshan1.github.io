@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect, HashRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -16,7 +16,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* <Preloader load={load} /> */}
       {/* <div className="App" id={load ? "no-scroll" : "scroll"}> */}
       <NavBar />
@@ -29,7 +29,7 @@ const App = () => {
       <Redirect to="/" />
       <Footer />
       {/* </div> */}
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
